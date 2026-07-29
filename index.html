@@ -6,10 +6,8 @@
 
   <title>María & Santiago | 24.04.2027</title>
 
-  <meta
-    name="description"
-    content="María & Santiago — 24 de abril de 2027. Nuestra historia, nuestro gran día y todos los detalles de nuestra boda."
-  >
+  <meta name="description"
+    content="María & Santiago — 24 de abril de 2027. Nos casamos.">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
@@ -30,33 +28,39 @@
       color: #263b2d;
     }
 
+    /* =========================
+       PORTADA
+    ========================= */
+
     .hero {
       min-height: 100vh;
       position: relative;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
+      color: white;
+
       background:
         linear-gradient(
-          rgba(20, 43, 31, 0.38),
-          rgba(20, 43, 31, 0.48)
+          rgba(20, 55, 36, 0.35),
+          rgba(20, 55, 36, 0.55)
         ),
-        url('images/propuesta.jpg') center center / cover no-repeat;
-      color: white;
+        url('propuesta.jpg') center center / cover no-repeat;
     }
 
     .hero-content {
       padding: 30px;
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .eyebrow {
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 5px;
       text-transform: uppercase;
-      margin-bottom: 25px;
-      font-weight: 400;
+      margin-bottom: 28px;
     }
 
     h1 {
@@ -73,29 +77,34 @@
     }
 
     .date {
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 6px;
       text-transform: uppercase;
-      margin-bottom: 45px;
+      margin-bottom: 35px;
     }
 
     .hero-message {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
+      font-size: 30px;
       font-style: italic;
-      margin-bottom: 35px;
+      margin-bottom: 40px;
     }
 
     .scroll {
       display: inline-block;
-      border: 1px solid rgba(255,255,255,0.7);
-      padding: 13px 25px;
+
+      border: 1px solid rgba(255,255,255,0.8);
+
+      padding: 14px 28px;
+
       color: white;
       text-decoration: none;
-      font-size: 11px;
+
+      font-size: 10px;
       letter-spacing: 3px;
       text-transform: uppercase;
-      transition: 0.3s;
+
+      transition: all 0.3s ease;
     }
 
     .scroll:hover {
@@ -103,33 +112,29 @@
       color: #263b2d;
     }
 
+    /* =========================
+       NUESTRA HISTORIA
+    ========================= */
+
     .intro {
-      padding: 110px 25px;
+      padding: 120px 25px;
       text-align: center;
       background: #f7f5ef;
     }
 
     .section-label {
-      color: #657c69;
+      color: #64806b;
       font-size: 11px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .intro h2 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(42px, 6vw, 70px);
+      font-size: clamp(45px, 6vw, 75px);
       font-weight: 400;
       margin-bottom: 25px;
-    }
-
-    .intro p {
-      max-width: 650px;
-      margin: auto;
-      line-height: 1.9;
-      font-size: 15px;
-      color: #59645b;
     }
 
     .divider {
@@ -139,38 +144,147 @@
       margin: 35px auto;
     }
 
-    @media (max-width: 600px) {
+    .intro p {
+      max-width: 680px;
+      margin: auto;
+
+      line-height: 2;
+      font-size: 15px;
+
+      color: #59645b;
+    }
+
+    /* =========================
+       DETALLES
+    ========================= */
+
+    .details {
+      padding: 100px 25px;
+
+      background: #e8eee7;
+
+      text-align: center;
+    }
+
+    .details h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 55px;
+      font-weight: 400;
+
+      margin-bottom: 60px;
+    }
+
+    .details-grid {
+      max-width: 900px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    .detail-card {
+      padding: 30px;
+    }
+
+    .detail-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .detail-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .detail-card p {
+      color: #59645b;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 80px 25px;
+
+      background: #263b2d;
+
+      color: white;
+
+      text-align: center;
+    }
+
+    footer h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 50px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media (max-width: 650px) {
 
       .hero {
         min-height: 100svh;
       }
 
       .eyebrow {
+        font-size: 9px;
         letter-spacing: 3px;
-        font-size: 10px;
       }
 
       h1 {
-        font-size: 76px;
+        font-size: 78px;
       }
 
       .date {
+        font-size: 11px;
         letter-spacing: 3px;
-        font-size: 12px;
       }
 
       .hero-message {
-        font-size: 23px;
+        font-size: 25px;
       }
 
       .intro {
-        padding: 80px 25px;
+        padding: 90px 25px;
+      }
+
+      .intro h2 {
+        font-size: 48px;
+      }
+
+      .details-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      footer h2 {
+        font-size: 45px;
       }
     }
   </style>
 </head>
 
+
 <body>
+
+  <!-- PORTADA -->
 
   <section class="hero">
 
@@ -203,6 +317,8 @@
   </section>
 
 
+  <!-- NUESTRA HISTORIA -->
+
   <section class="intro" id="historia">
 
     <div class="section-label">
@@ -222,6 +338,75 @@
     </p>
 
   </section>
+
+
+  <!-- EL GRAN DÍA -->
+
+  <section class="details">
+
+    <div class="section-label">
+      El gran día
+    </div>
+
+    <h2>
+      24 de abril de 2027
+    </h2>
+
+    <div class="details-grid">
+
+      <div class="detail-card">
+
+        <div class="detail-icon">
+          ⛪
+        </div>
+
+        <h3>
+          Ceremonia
+        </h3>
+
+        <p>
+          Iglesia Madre de Dios<br>
+          Medellín
+        </p>
+
+      </div>
+
+
+      <div class="detail-card">
+
+        <div class="detail-icon">
+          🥂
+        </div>
+
+        <h3>
+          Celebración
+        </h3>
+
+        <p>
+          Bárbaro<br>
+          Cena & Rumba
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL -->
+
+  <footer>
+
+    <h2>
+      María & Santiago
+    </h2>
+
+    <p>
+      24 · 04 · 2027
+    </p>
+
+  </footer>
 
 </body>
 </html>
