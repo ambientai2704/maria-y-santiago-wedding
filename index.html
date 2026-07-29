@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>María & Santiago | 24.04.2027</title>
+
+  <meta
+    name="description"
+    content="María & Santiago — 24 de abril de 2027. Nuestra historia, nuestro gran día y todos los detalles de nuestra boda."
+  >
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f7f5ef;
+      color: #263b2d;
+    }
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        linear-gradient(
+          rgba(20, 43, 31, 0.38),
+          rgba(20, 43, 31, 0.48)
+        ),
+        url('images/propuesta.jpg') center center / cover no-repeat;
+      color: white;
+    }
+
+    .hero-content {
+      padding: 30px;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(70px, 12vw, 150px);
+      font-weight: 400;
+      line-height: 0.85;
+      margin-bottom: 30px;
+    }
+
+    .ampersand {
+      font-style: italic;
+      font-size: 0.65em;
+    }
+
+    .date {
+      font-size: 15px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 45px;
+    }
+
+    .hero-message {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-style: italic;
+      margin-bottom: 35px;
+    }
+
+    .scroll {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,0.7);
+      padding: 13px 25px;
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .scroll:hover {
+      background: white;
+      color: #263b2d;
+    }
+
+    .intro {
+      padding: 110px 25px;
+      text-align: center;
+      background: #f7f5ef;
+    }
+
+    .section-label {
+      color: #657c69;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .intro h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(42px, 6vw, 70px);
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+
+    .intro p {
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.9;
+      font-size: 15px;
+      color: #59645b;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #78917d;
+      margin: 35px auto;
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        min-height: 100svh;
+      }
+
+      .eyebrow {
+        letter-spacing: 3px;
+        font-size: 10px;
+      }
+
+      h1 {
+        font-size: 76px;
+      }
+
+      .date {
+        letter-spacing: 3px;
+        font-size: 12px;
+      }
+
+      .hero-message {
+        font-size: 23px;
+      }
+
+      .intro {
+        padding: 80px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        Con alegría en el corazón
+      </div>
+
+      <h1>
+        María
+        <span class="ampersand">&</span>
+        Santiago
+      </h1>
+
+      <div class="date">
+        24 · 04 · 2027
+      </div>
+
+      <div class="hero-message">
+        Nos casamos.
+      </div>
+
+      <a href="#historia" class="scroll">
+        Nuestra historia
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="intro" id="historia">
+
+    <div class="section-label">
+      Nuestra historia
+    </div>
+
+    <h2>
+      Todo comenzó hace 9 años...
+    </h2>
+
+    <div class="divider"></div>
+
+    <p>
+      Nos conocimos en Emaús, un grupo juvenil, en el año 2017.
+      Desde entonces hemos construido una historia llena de amor,
+      aprendizajes y sueños compartidos.
+    </p>
+
+  </section>
+
+</body>
+</html>
