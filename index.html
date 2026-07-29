@@ -1,384 +1,412 @@
-<!DOCTYPE html>
+no se donde meter eso qiue me dijiste, esto es lo que tengo<!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>María Clara & Santiago | 24.04.2027</title>
+  <title>María & Santiago | 24.04.2027</title>
 
-<style>
+  <meta name="description"
+    content="María & Santiago — 24 de abril de 2027. Nos casamos.">
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-html{
-  scroll-behavior:smooth;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-body{
-  font-family:'Montserrat',sans-serif;
-  background:#f7f5ef;
-  color:#263b2d;
-}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f7f5ef;
+      color: #263b2d;
+    }
 
-.hero{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  color:white;
-  background:
-  linear-gradient(
-  rgba(20,55,36,.35),
-  rgba(20,55,36,.55)
-  ),
-  url('propuesta.jpg') center center/cover no-repeat;
-}
+    /* =========================
+       PORTADA
+    ========================= */
 
-.hero-content{
-  padding:30px;
-}
+    .hero {
+      min-height: 100vh;
+      position: relative;
 
-.eyebrow{
-  letter-spacing:5px;
-  text-transform:uppercase;
-  font-size:12px;
-  margin-bottom:25px;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(70px,12vw,150px);
-  font-weight:400;
-  line-height:.9;
-}
+      text-align: center;
+      color: white;
 
-.ampersand{
-  font-style:italic;
-}
+      background:
+        linear-gradient(
+          rgba(20, 55, 36, 0.35),
+          rgba(20, 55, 36, 0.55)
+        ),
+        url('propuesta.jpg') center center / cover no-repeat;
+    }
 
-.date{
-  margin-top:30px;
-  letter-spacing:4px;
-  text-transform:uppercase;
-}
+    .hero-content {
+      padding: 30px;
+      max-width: 900px;
+    }
 
-.hero-message{
-  margin-top:25px;
-  font-size:28px;
-  font-family:'Cormorant Garamond',serif;
-  font-style:italic;
-}
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
 
-.scroll{
-  display:inline-block;
-  margin-top:40px;
-  padding:15px 30px;
-  border:1px solid white;
-  color:white;
-  text-decoration:none;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:11px;
-}
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(70px, 12vw, 150px);
+      font-weight: 400;
+      line-height: 0.85;
+      margin-bottom: 30px;
+    }
 
-.scroll:hover{
-  background:white;
-  color:#263b2d;
-}
+    .ampersand {
+      font-style: italic;
+      font-size: 0.65em;
+    }
 
-section{
-  padding:100px 25px;
-}
+    .date {
+      font-size: 14px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
 
-.section-label{
-  text-align:center;
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:11px;
-  color:#64806b;
-}
+    .hero-message {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      font-style: italic;
+      margin-bottom: 40px;
+    }
 
-.section-title{
-  text-align:center;
-  font-family:'Cormorant Garamond',serif;
-  font-size:60px;
-  margin-top:20px;
-  margin-bottom:30px;
-}
+    .scroll {
+      display: inline-block;
 
-.divider{
-  width:60px;
-  height:1px;
-  background:#78917d;
-  margin:30px auto 50px;
-}
+      border: 1px solid rgba(255,255,255,0.8);
 
-.story{
-  max-width:800px;
-  margin:auto;
-  text-align:center;
-}
+      padding: 14px 28px;
 
-.story img{
-  width:100%;
-  border-radius:12px;
-  margin-bottom:35px;
-}
+      color: white;
+      text-decoration: none;
 
-.story p{
-  line-height:2;
-  color:#59645b;
-}
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
 
-.details{
-  background:#e8eee7;
-}
+      transition: all 0.3s ease;
+    }
 
-.details-grid{
-  max-width:1000px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:40px;
-}
+    .scroll:hover {
+      background: white;
+      color: #263b2d;
+    }
 
-.detail-card{
-  text-align:center;
-}
+    /* =========================
+       NUESTRA HISTORIA
+    ========================= */
 
-.detail-card h3{
-  font-family:'Cormorant Garamond',serif;
-  font-size:35px;
-  margin:15px 0;
-}
+    .intro {
+      padding: 120px 25px;
+      text-align: center;
+      background: #f7f5ef;
+    }
 
-.detail-card p{
-  line-height:1.8;
-}
+    .section-label {
+      color: #64806b;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
 
-.gallery{
-  max-width:1200px;
-  margin:auto;
-}
+    .intro h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(45px, 6vw, 75px);
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
 
-.gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #78917d;
+      margin: 35px auto;
+    }
 
-.gallery-grid img{
-  width:100%;
-  border-radius:12px;
-}
+    .intro p {
+      max-width: 680px;
+      margin: auto;
 
-footer{
-  background:#263b2d;
-  color:white;
-  text-align:center;
-  padding:80px 20px;
-}
+      line-height: 2;
+      font-size: 15px;
 
-footer h2{
-  font-family:'Cormorant Garamond',serif;
-  font-size:55px;
-  margin-bottom:10px;
-}
+      color: #59645b;
+    }
 
-footer p{
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
+    /* =========================
+       DETALLES
+    ========================= */
 
-@media(max-width:768px){
+    .details {
+      padding: 100px 25px;
 
-.section-title{
-  font-size:45px;
-}
+      background: #e8eee7;
 
-h1{
-  font-size:82px;
-}
+      text-align: center;
+    }
 
-}
+    .details h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 55px;
+      font-weight: 400;
 
-</style>
+      margin-bottom: 60px;
+    }
+
+    .details-grid {
+      max-width: 900px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    .detail-card {
+      padding: 30px;
+    }
+
+    .detail-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .detail-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .detail-card p {
+      color: #59645b;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 80px 25px;
+
+      background: #263b2d;
+
+      color: white;
+
+      text-align: center;
+    }
+
+    footer h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 50px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media (max-width: 650px) {
+
+      .hero {
+        min-height: 100svh;
+      }
+
+      .eyebrow {
+        font-size: 9px;
+        letter-spacing: 3px;
+      }
+
+      h1 {
+        font-size: 78px;
+      }
+
+      .date {
+        font-size: 11px;
+        letter-spacing: 3px;
+      }
+
+      .hero-message {
+        font-size: 25px;
+      }
+
+      .intro {
+        padding: 90px 25px;
+      }
+
+      .intro h2 {
+        font-size: 48px;
+      }
+
+      .details-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      footer h2 {
+        font-size: 45px;
+      }
+    }
+  </style>
 </head>
+
 
 <body>
 
-<section class="hero">
+  <!-- PORTADA -->
 
-<div class="hero-content">
+  <section class="hero">
 
-<div class="eyebrow">
-24 de abril de 2027
-</div>
+    <div class="hero-content">
 
-<h1>
-María Clara
-<span class="ampersand">&</span>
-Santiago
-</h1>
+      <div class="eyebrow">
+        Con alegría en el corazón
+      </div>
 
-<div class="date">
-Medellín · Colombia
-</div>
+      <h1>
+        María
+        <span class="ampersand">&</span>
+        Santiago
+      </h1>
 
-<div class="hero-message">
-Nos casamos 💚
-</div>
+      <div class="date">
+        24 · 04 · 2027
+      </div>
 
-<a hrefia
-Nuestra Historia
-</a>
+      <div class="hero-message">
+        Nos casamos.
+      </div>
 
-</div>
+      <a href="#historia" class="scroll">
+        Nuestra historia
+      </a>
 
-</section>
+    </div>
 
-<section id="historia">
+  </section>
 
-<div class="section-label">
-Nuestra Historia
-</div>
 
-<h2 class="section-title">
-Todo comenzó hace 9 años
-</h2>
+  <!-- NUESTRA HISTORIA -->
 
-<div class="divider"></div>
+  <section class="intro" id="historia">
 
-<div class="story">
+    <div class="section-label">
+      Nuestra historia
+    </div>
 
-eia-graduacion.jpg
+    <h2>
+      Todo comenzó hace 9 años...
+    </h2>
 
-<p>
-Nos conocimos en Emaús en 2017.
-Lo que comenzó como una amistad se convirtió en una historia llena de amor,
-aprendizajes, crecimiento y sueños compartidos.
+    <div class="divider"></div>
 
-Durante estos años estudiamos Ingeniería Administrativa en la Universidad EIA,
-construimos proyectos juntos y descubrimos que los mejores planes siempre son mejores cuando se viven en compañía.
-</p>
+    <p>
+      Nos conocimos en Emaús, un grupo juvenil, en el año 2017.
+      Desde entonces hemos construido una historia llena de amor,
+      aprendizajes y sueños compartidos.
+    </p>
 
-</div>
+  </section>
 
-</section>
 
-<section>
+  <!-- EL GRAN DÍA -->
 
-<div class="section-label">
-Nuestro Camino
-</div>
+  <section class="details">
 
-<h2 class="section-title">
-Construyendo nuestro futuro
-</h2>
+    <div class="section-label">
+      El gran día
+    </div>
 
-<div class="divider"></div>
+    <h2>
+      24 de abril de 2027
+    </h2>
 
-<div class="story">
+    <div class="details-grid">
 
-barichara-caminando.jpg
+      <div class="detail-card">
 
-<p>
-Entre viajes, emprendimientos y recuerdos inolvidables,
-hemos recorrido la vida de la mano.
+        <div class="detail-icon">
+          ⛪
+        </div>
 
-Cada paso nos acercó un poco más al sueño que hoy estamos a punto de cumplir:
-comenzar una nueva etapa juntos.
-</p>
+        <h3>
+          Ceremonia
+        </h3>
 
-</div>
+        <p>
+          Iglesia Madre de Dios<br>
+          Medellín
+        </p>
 
-</section>
+      </div>
 
-<section>
 
-<div class="section-label">
-El Gran Sí
-</div>
+      <div class="detail-card">
 
-<h2 class="section-title">
-Valle Sagrado, Perú
-</h2>
+        <div class="detail-icon">
+          🥂
+        </div>
 
-<div class="divider"></div>
+        <h3>
+          Celebración
+        </h3>
 
-<div class="story">
+        <p>
+          Bárbaro<br>
+          Cena & Rumba
+        </p>
 
-anillo.jpg
+      </div>
 
-<p>
-Después de muchos años construyendo una vida juntos,
-llegamos al Valle Sagrado de los Incas.
+    </div>
 
-Rodeados de montañas, naturaleza y un paisaje inolvidable, vivimos uno de los momentos más importantes de nuestra historia.
+  </section>
 
-Allí comenzó oficialmente la aventura que hoy queremos celebrar con ustedes.
-</p>
 
-</div>
+  <!-- FINAL -->
 
-</section>
+  <footer>
 
-<section class="details">
+    <h2>
+      María & Santiago
+    </h2>
 
-<div class="section-label">
-El Gran Día
-</div>
+    <p>
+      24 · 04 · 2027
+    </p>
 
-<h2 class="section-title">
-24 de abril de 2027
-</h2>
+  </footer>
 
-<div class="details-grid">
-
-<div class="detail-card">
-<h3>⛪ Ceremonia</h3>
-
-<p>
-Iglesia Madre de Dios<br>
-4:00 PM
-</p>
-</div>
-
-<div class="detail-card">
-<h3>🥂 Recepción</h3>
-
-<p>
-Bárbaro<br>
-5:30 PM
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="section-label">
-Galería
-</div>
-
-<h2 class="section-title">
-Nuestros Recuerdos
-</h2>
-
-<div class="divider"></div>
-
-<div class="gallery">
-
-<div class="gallery-grid">
-
-foto-traje
+</body>
+</html>
